@@ -8,27 +8,25 @@ ${BROWSER}              firefox
 ${URL}                  https://www.amazon.com.br
 ${MENU_ELETRONICOS}     //a[text()="Eletrônicos"]
 ${HEADER_ELETRONICOS}   //div/span[text()="Eletrônicos e Tecnologia"]
-${TITLE_ELETRONICOS}    //title[text()="Eletrônicos e Tecnologia | Amazon.com.br"]
+${TITLE_ELETRONICOS}    Eletrônicos e Tecnologia | Amazon.com.br
 ${NOME_CATEGORIA}       //a/span[text()="Computadores e Informática"]
 
 *** Keywords ***
 Abrir o navegador
-    [Tags]    no_browser_close
     ${ci}=    Get Environment Variable    CI    default=False
     Run Keyword If    '${ci}'=='true'    Abrir navegador no modo CI
     ...    ELSE    Abrir navegador normalmente
 
 Abrir navegador no modo CI
-    Open Browser    ${URL}    firefox    headless=True
+    Open Browser    ${URL}    ${BROWSER}    options=--headless --no-sandbox
     Maximize Browser Window
 
 Abrir navegador normalmente
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
-
-# Fechar o navegador
-#     Capture Page Screenshot
-#     Close Browser
+ Fechar o navegador
+    Capture Page Screenshot
+    Close Browser
 
 Acessar a home page do site Amazon.com.br
     Go To    url=${URL}

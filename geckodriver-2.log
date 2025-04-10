@@ -1,0 +1,52 @@
+1744303124193	geckodriver	INFO	Listening on 127.0.0.1:55577
+1744303127274	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55578" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\edcar\\AppData\\Local\\Temp\\rust_mozprofileiyOuma"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1744303127672	Marionette	INFO	Marionette enabled
+1744303127799	Marionette	INFO	Listening on port 55661
+WebDriver BiDi listening on ws://127.0.0.1:55578
+Read port: 55661
+1744303127983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55578/devtools/browser/8c50babc-b03d-4114-a575-06e6f39cce5c
+JavaScript warning: https://www.amazon.com.br/, line 3812: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/, line 3818: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/2FdxS2qRQ-iFOYzxiZxuWeXxJrfAXWtXpjqcFR5bXcU.js line 2 > eval line 4882 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914, line 80: Script terminated by timeout at:
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:506
+Le/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:101:401
+hd/this.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:90:889
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+P/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:96:1199
+hd/this.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:90:889
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+P/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:96:1199
+hd/this.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:90:889
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+N/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:91:475
+hd/this.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:90:889
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+ih/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:131:320
+Xa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:49:339
+Ua.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:49:127
+Wa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:48:483
+ih/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:131:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:81:218
+n.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:121:515
+Ta.prototype.Vb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:48:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:121:524
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:81:218
+n.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:121:515
+Ta.prototype.Vb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:48:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:121:524
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:81:218
+n.Gd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:93:477
+
+JavaScript warning: https://www.amazon.com.br/s?k=Console+Xbox+Series&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss, line 5757: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/71hE7IvdPvL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
