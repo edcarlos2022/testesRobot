@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.6 on win32)" generated="2025-04-10T12:23:40.764790" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.6 on win32)" generated="2025-04-10T12:31:07.622961" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon  Testes" source="C:\Users\edcar\MyWorkspaces\robotFrameWork\webTesting\tests\amazon _testes.robot">
 <test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="10">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Get Environment Variable" owner="OperatingSystem">
-<msg time="2025-04-10T12:23:40.985869" level="INFO">${ci} = False</msg>
+<msg time="2025-04-10T12:31:07.843629" level="INFO">${ci} = False</msg>
 <var>${ci}</var>
 <arg>CI</arg>
 <arg>default=False</arg>
 <doc>Returns the value of an environment variable with the given name.</doc>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Abrir navegador normalmente" owner="amazon_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:40.985869" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
+<msg time="2025-04-10T12:31:07.843629" level="INFO">Opening browser 'firefox' to base url 'https://www.amazon.com.br'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="4.377335"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="8.176214"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-10T12:23:45.363204" elapsed="0.052100"/>
+<status status="PASS" start="2025-04-10T12:31:16.021849" elapsed="0.298277"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="4.429435"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="8.476497"/>
 </kw>
 <arg>'${ci}'=='true'</arg>
 <arg>Abrir navegador no modo CI</arg>
 <arg>ELSE</arg>
 <arg>Abrir navegador normalmente</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="4.429435"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="8.476497"/>
 </kw>
 <tag>no_browser_close</tag>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="4.429435"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="8.476497"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:45.416512" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2025-04-10T12:31:16.341989" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-04-10T12:23:45.416512" elapsed="2.467502"/>
+<status status="PASS" start="2025-04-10T12:31:16.341989" elapsed="0.874493"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:47.885012" elapsed="0.024407"/>
+<status status="PASS" start="2025-04-10T12:31:17.217485" elapsed="0.278935"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:45.415304" elapsed="2.494115"/>
+<status status="PASS" start="2025-04-10T12:31:16.339981" elapsed="1.156439"/>
 </kw>
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:47.909419" level="INFO">Clicking element '//a[text()="Eletrônicos"]'.</msg>
+<msg time="2025-04-10T12:31:17.498418" level="INFO">Clicking element '//a[text()="Eletrônicos"]'.</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-10T12:23:47.909419" elapsed="2.110465"/>
+<status status="PASS" start="2025-04-10T12:31:17.497419" elapsed="2.081009"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.019884" elapsed="0.028547"/>
+<status status="PASS" start="2025-04-10T12:31:19.578428" elapsed="0.074141"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:47.909419" elapsed="2.139012"/>
+<status status="PASS" start="2025-04-10T12:31:17.497419" elapsed="2.155150"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>text=${FRASE}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.048431" elapsed="0.031544"/>
+<status status="PASS" start="2025-04-10T12:31:19.654568" elapsed="0.011287"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${HEADER_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.080974" elapsed="0.028455"/>
+<status status="PASS" start="2025-04-10T12:31:19.667184" elapsed="0.022522"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:50.048431" elapsed="0.060998"/>
+<status status="PASS" start="2025-04-10T12:31:19.653567" elapsed="0.036139"/>
 </kw>
 <kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${TITLE_ELETRONICOS}&quot;">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:50.114428" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<msg time="2025-04-10T12:31:19.693317" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
 <arg>title=${TITLE_ELETRONICOS}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.110432" elapsed="0.003996"/>
+<status status="PASS" start="2025-04-10T12:31:19.691310" elapsed="0.002007"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:50.110432" elapsed="0.003996"/>
+<status status="PASS" start="2025-04-10T12:31:19.691310" elapsed="0.002007"/>
 </kw>
 <doc>Esse teste verifica o menu eletronicos do site da Amazon.com.br
 e verifica a categoria computadores e informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
 <tag>no_browser_close</tag>
-<status status="PASS" start="2025-04-10T12:23:40.985869" elapsed="9.129559"/>
+<status status="PASS" start="2025-04-10T12:31:07.843629" elapsed="11.849688"/>
 </test>
 <test id="s1-t2" name="Caso de teste 02 - Pesquisa de produto" line="20">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Get Environment Variable" owner="OperatingSystem">
-<msg time="2025-04-10T12:23:50.116508" level="INFO">${ci} = False</msg>
+<msg time="2025-04-10T12:31:19.696318" level="INFO">${ci} = False</msg>
 <var>${ci}</var>
 <arg>CI</arg>
 <arg>default=False</arg>
 <doc>Returns the value of an environment variable with the given name.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.116508" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-10T12:31:19.695317" elapsed="0.001001"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Abrir navegador normalmente" owner="amazon_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:50.117533" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
+<msg time="2025-04-10T12:31:19.698316" level="INFO">Opening browser 'firefox' to base url 'https://www.amazon.com.br'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.117533" elapsed="4.288190"/>
+<status status="PASS" start="2025-04-10T12:31:19.697322" elapsed="6.976238"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-10T12:23:54.407043" elapsed="0.033927"/>
+<status status="PASS" start="2025-04-10T12:31:26.674568" elapsed="0.325056"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:50.117533" elapsed="4.323437"/>
+<status status="PASS" start="2025-04-10T12:31:19.697322" elapsed="7.302302"/>
 </kw>
 <arg>'${ci}'=='true'</arg>
 <arg>Abrir navegador no modo CI</arg>
 <arg>ELSE</arg>
 <arg>Abrir navegador normalmente</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-04-10T12:23:50.117533" elapsed="4.323437"/>
+<status status="PASS" start="2025-04-10T12:31:19.696318" elapsed="7.303306"/>
 </kw>
 <tag>no_browser_close</tag>
-<status status="PASS" start="2025-04-10T12:23:50.116508" elapsed="4.324462"/>
+<status status="PASS" start="2025-04-10T12:31:19.695317" elapsed="7.305812"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:54.442977" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2025-04-10T12:31:27.004400" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-04-10T12:23:54.441976" elapsed="1.290864"/>
+<status status="PASS" start="2025-04-10T12:31:27.003392" elapsed="1.399699"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:55.732840" elapsed="0.066345"/>
+<status status="PASS" start="2025-04-10T12:31:28.403091" elapsed="0.098211"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:54.441976" elapsed="1.357209"/>
+<status status="PASS" start="2025-04-10T12:31:27.003392" elapsed="1.498907"/>
 </kw>
 <kw name="Digitar o nome de produto &quot;Console Xbox Series&quot; no campo de pesquisa" owner="amazon_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=field-keywords</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:55.800186" elapsed="0.060537"/>
+<status status="PASS" start="2025-04-10T12:31:28.503299" elapsed="0.066517"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:55.860723" level="INFO">Typing text 'Console Xbox Series' into text field 'field-keywords'.</msg>
+<msg time="2025-04-10T12:31:28.570816" level="INFO">Typing text 'Console Xbox Series' into text field 'field-keywords'.</msg>
 <arg>locator=field-keywords</arg>
 <arg>text=Console Xbox Series</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-10T12:23:55.860723" elapsed="0.170001"/>
+<status status="PASS" start="2025-04-10T12:31:28.569816" elapsed="0.635060"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:55.800186" elapsed="0.231539"/>
+<status status="PASS" start="2025-04-10T12:31:28.502299" elapsed="0.703579"/>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-10T12:23:56.033197" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<msg time="2025-04-10T12:31:29.206876" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
 <arg>locator=nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-10T12:23:56.031725" elapsed="1.624797"/>
+<status status="PASS" start="2025-04-10T12:31:29.206876" elapsed="1.383286"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:56.031725" elapsed="1.624797"/>
+<status status="PASS" start="2025-04-10T12:31:29.205878" elapsed="1.384284"/>
 </kw>
 <kw name="Verificar se o resultado da pesquisa está listando o produto &quot;Console Xbox Series&quot;" owner="amazon_resources" source_name="Verificar se o resultado da pesquisa está listando o produto &quot;${PRODUTO}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=(//span[contains(.,'${PRODUTO}')])[5]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-10T12:23:57.657542" elapsed="0.022752"/>
+<status status="PASS" start="2025-04-10T12:31:30.591160" elapsed="0.179833"/>
 </kw>
-<status status="PASS" start="2025-04-10T12:23:57.657542" elapsed="0.022752"/>
+<status status="PASS" start="2025-04-10T12:31:30.591160" elapsed="0.179833"/>
 </kw>
 <doc>Esse teste verifica a busca de um produto</doc>
 <tag>Busca_produtos</tag>
 <tag>lista_busca</tag>
 <tag>no_browser_close</tag>
-<status status="PASS" start="2025-04-10T12:23:50.115428" elapsed="7.564866"/>
+<status status="PASS" start="2025-04-10T12:31:19.694332" elapsed="11.077659"/>
 </test>
 <doc>Essa suite testa o side da Amazon.com.Busca_produto.br</doc>
-<status status="PASS" start="2025-04-10T12:23:40.764790" elapsed="16.916606"/>
+<status status="PASS" start="2025-04-10T12:31:07.622961" elapsed="23.150032"/>
 </suite>
 <statistics>
 <total>

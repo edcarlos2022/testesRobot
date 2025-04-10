@@ -4,13 +4,12 @@ Library    XML
 Library    OperatingSystem
 
 *** Variables ***
-${BROWSER}              chrome 
+${BROWSER}              firefox
 ${URL}                  https://www.amazon.com.br
 ${MENU_ELETRONICOS}     //a[text()="Eletrônicos"]
 ${HEADER_ELETRONICOS}   //div/span[text()="Eletrônicos e Tecnologia"]
 ${TITLE_ELETRONICOS}    //title[text()="Eletrônicos e Tecnologia | Amazon.com.br"]
 ${NOME_CATEGORIA}       //a/span[text()="Computadores e Informática"]
-
 
 *** Keywords ***
 Abrir o navegador
@@ -20,16 +19,8 @@ Abrir o navegador
     ...    ELSE    Abrir navegador normalmente
 
 Abrir navegador no modo CI
-    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    ${RANDOM}=     Evaluate    random.randint(1000, 9999)    random
-    Call Method    ${options}    add_argument    --no-sandbox
-    Call Method    ${options}    add_argument    --disable-dev-shm-usage
-    Call Method    ${options}    add_argument    --headless
-    Call Method    ${options}    add_argument    --disable-gpu
-    Call Method    ${options}    add_argument    --user-data-dir=/tmp/profile_${RANDOM}
-    Open Browser    ${URL}    chrome    options=${options}
+    Open Browser    ${URL}    firefox    headless=True
     Maximize Browser Window
-
 
 Abrir navegador normalmente
     Open Browser    ${URL}    ${BROWSER}
@@ -46,18 +37,18 @@ Acessar a home page do site Amazon.com.br
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
     Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}
-    
+
 Verificar se aparece a frase "${FRASE}"
     Wait Until Page Contains    text=${FRASE}
     Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS}
 
 Verificar se o título da página fica "${TITLE_ELETRONICOS}"
     Title Should Be    title=${TITLE_ELETRONICOS}
-    
+
 Digitar o nome de produto "Console Xbox Series" no campo de pesquisa
     Wait Until Element Is Visible    locator=field-keywords
     Input Text    locator=field-keywords    text=Console Xbox Series
-     
+
 Clicar no botão de pesquisa 
     Click Element    locator=nav-search-submit-button
 
