@@ -1,0 +1,17 @@
+1744301290731	geckodriver	INFO	Listening on 127.0.0.1:54420
+1744301293840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54421" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\edcar\\AppData\\Local\\Temp\\rust_mozprofileoPYgmm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1744301294275	Marionette	INFO	Marionette enabled
+1744301294413	Marionette	INFO	Listening on port 54428
+WebDriver BiDi listening on ws://127.0.0.1:54421
+Read port: 54428
+1744301294562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54421/devtools/browser/bdde0675-8c00-4db9-9088-3afa645ac22a
+JavaScript warning: https://www.amazon.com.br/, line 3835: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.amazon.com.br/, line 3822: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/2FdxS2qRQ-iFOYzxiZxuWeXxJrfAXWtXpjqcFR5bXcU.js line 2 > eval line 2350 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics, line 5582: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/71hE7IvdPvL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
