@@ -13,7 +13,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12'  # Corrigido para refletir sua versão local
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
@@ -23,15 +23,15 @@ jobs:
     - name: Install Firefox and geckodriver
       run: |
         sudo apt-get update
-        sudo apt-get install -y firefox
-        GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep 'tag_name' | cut -d '"' -f 4)
+        sudo apt-get install -y firefox jq
+        GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
         wget https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
         tar -xvzf geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
         chmod +x geckodriver
         sudo mv geckodriver /usr/local/bin/
 
-    - name: Run tests
+    - name: Run Robot Framework tests (recursively)
       env:
         CI: true
       run: |
-        robot Tests/
+        robot --recursive Tests/
