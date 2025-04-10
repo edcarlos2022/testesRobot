@@ -42,3 +42,44 @@ h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs
 
 JavaScript warning: https://www.amazon.com.br/s?k=Console+Xbox+Series&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470&ref=nb_sb_noss, line 5681: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://m.media-amazon.com/images/I/71hE7IvdPvL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 2306: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&q=browse line 2 > eval line 2306 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fclient%3Dfirefox-b-d%26q%3Dbrowse%26sei%3DueT3Z_ufHrOb5OUPwYiiwAg&q=EhAoBAKQDj09ABAk7VEliao5GLnJ378GIjChNn4ZEWd62frajQzsR9FJnfwGRvrpeZnX4qlCr4-Zg-NfzSy5HgI1oc3ZVXVOjk8yAnJSWgFD, line 1: ReferenceError: solveSimpleChallenge is not defined
+JavaScript warning: https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470, line 379: Script terminated by timeout at:
+A@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:6405
+T/this.log@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:7365
+I@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:1020
+@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:1813
+i/<@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:360:136
+r/this.recordMetric@https://www.amazon.com.br/s?k=Console+Xbox+Series&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470&ref=nb_sb_noss:5673:7822
+I@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:1020
+@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:1813
+i/<@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:360:136
+k@https://www.amazon.com.br/s?k=Console+Xbox+Series&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470&ref=nb_sb_noss:5673:23909
+D/<@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:686
+t.emit@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:1333
+D@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:5738
+D/<@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Console+Xbox+Series&crid=12XJBM5WBGCIA&sprefix=%2Caps%2C470:379:686
+
+1744299245197	Marionette	INFO	Stopped listening on port 52380
+Dynamically enable window occlusion 1
