@@ -21,13 +21,15 @@ Abrir o navegador
 
 Abrir navegador no modo CI
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    ${RANDOM}=     Evaluate    random.randint(1000, 9999)    random
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --disable-gpu
-    Call Method    ${options}    add_argument    --user-data-dir=/tmp/profile_${{RANDOM}}
+    Call Method    ${options}    add_argument    --user-data-dir=/tmp/profile_${RANDOM}
     Open Browser    ${URL}    chrome    options=${options}
     Maximize Browser Window
+
 
 Abrir navegador normalmente
     Open Browser    ${URL}    ${BROWSER}
