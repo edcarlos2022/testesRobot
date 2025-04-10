@@ -17,22 +17,27 @@ jobs:
 
     - name: Install dependencies
       run: |
-         python -m pip install --upgrade pip
-         pip install robotframework
-         pip install robotframework-seleniumlibrary
+        python -m pip install --upgrade pip
+        pip install robotframework
+        pip install robotframework-seleniumlibrary
 
-    - name: Install Firefox and geckodriver
+    - name: Remove snap Firefox and install via apt
       run: |
+        sudo snap remove firefox
+        sudo add-apt-repository ppa:mozillateam/ppa -y
         sudo apt-get update
-        sudo apt-get install -y firefox jq
+        sudo apt-get install -y firefox
+        sudo sed -i '/^Package: firefox$/a Pin: release o=LP-PPA-mozillateam\nPin-Priority: 501' /etc/apt/preferences.d/mozillateam
+        sudo apt-get install -y firefox
+
+    - name: Install GeckoDriver
+      run: |
         GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
         wget https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
         tar -xvzf geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
         chmod +x geckodriver
         sudo mv geckodriver /usr/local/bin/
 
-    - name: Run Robot Framework tests (recursively)
-      env:
-        CI: true
+    - name: Run tests
       run: |
         robot Tests/
