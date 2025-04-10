@@ -21,13 +21,23 @@ jobs:
         pip install robotframework
         pip install robotframework-seleniumlibrary
 
-    - name: Remove snap Firefox and install via apt
+    - name: Remove snap Firefox and install via apt (PPA)
       run: |
-        sudo snap remove firefox
+        # Remover Firefox via Snap, se existir
+        sudo snap remove firefox || true
+
+        # Adicionar PPA oficial da Mozilla
         sudo add-apt-repository ppa:mozillateam/ppa -y
+
+        # Criar preferência para o APT usar o Firefox do PPA, não o Snap
+        echo '
+        Package: firefox
+        Pin: release o=LP-PPA-mozillateam
+        Pin-Priority: 501
+        ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+
+        # Atualizar pacotes e instalar Firefox
         sudo apt-get update
-        sudo apt-get install -y firefox
-        sudo sed -i '/^Package: firefox$/a Pin: release o=LP-PPA-mozillateam\nPin-Priority: 501' /etc/apt/preferences.d/mozillateam
         sudo apt-get install -y firefox
 
     - name: Install GeckoDriver
