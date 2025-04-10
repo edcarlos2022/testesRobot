@@ -1,0 +1,27 @@
+1744300762188	geckodriver	INFO	Listening on 127.0.0.1:54029
+1744300765316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54030" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\edcar\\AppData\\Local\\Temp\\rust_mozprofile0wDS8K"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1744300765641	Marionette	INFO	Marionette enabled
+1744300765749	Marionette	INFO	Listening on port 54109
+WebDriver BiDi listening on ws://127.0.0.1:54030
+Read port: 54109
+1744300765905	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54030/devtools/browser/92d9bfbc-1997-4854-8bd4-e5a8ff0c0f13
+JavaScript warning: https://www.amazon.com.br/, line 3670: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/, line 3669: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s?k=Console+Xbox+Series&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1M5DEZG74PCX&sprefix=%2Caps%2C172&ref=nb_sb_noss, line 5613: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/71hE7IvdPvL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame, line 1: Script terminated by timeout at:
+Ve@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:19047
+it@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:20707
+tt@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:20481
+Ge@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:19651
+si@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:29937
+u@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:21412
+u@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:21527
+ni/a.viewabilityTracker@https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.5df30026.js?csm_attribution=APE-SafeFrame:1:29777
+
+1744300823840	Marionette	INFO	Stopped listening on port 54109
+Dynamically enable window occlusion 1
