@@ -18,8 +18,10 @@ Abrir o navegador
     ...    ELSE    Abrir navegador normalmente
 
 Abrir navegador no modo CI
-    Open Browser    ${URL}    ${BROWSER}    options=--headless --no-sandbox
+    ${options}=    Create List    --headless    --no-sandbox
+    Open Browser    ${URL}    ${BROWSER}    options=${options}
     Maximize Browser Window
+
 
 Abrir navegador normalmente
     Open Browser    ${URL}    ${BROWSER}

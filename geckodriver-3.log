@@ -1,0 +1,30 @@
+1744303720619	geckodriver	INFO	Listening on 127.0.0.1:55983
+1744303723716	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55984" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\edcar\\AppData\\Local\\Temp\\rust_mozprofilexadyCx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1744303724258	Marionette	INFO	Marionette enabled
+1744303724403	Marionette	INFO	Listening on port 55995
+WebDriver BiDi listening on ws://127.0.0.1:55984
+Read port: 55995
+1744303724568	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55984/devtools/browser/485060cf-dd8c-4d65-83e9-ad1a07b222d0
+JavaScript warning: https://www.amazon.com.br/, line 3815: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/, line 3815: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/2FdxS2qRQ-iFOYzxiZxuWeXxJrfAXWtXpjqcFR5bXcU.js line 2 > eval line 5750 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=r20110914:93:449
+
+JavaScript warning: https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics, line 5575: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/71hE7IvdPvL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics, line 5567: Script terminated by timeout at:
+an@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:5567:22997
+In@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:5567:23687
+D/<@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:289:686
+t.emit@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:289:1333
+D@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:289:5738
+D/<@https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics:289:686
+
+1744303823791	Marionette	INFO	Stopped listening on port 55995
+Dynamically enable window occlusion 1
