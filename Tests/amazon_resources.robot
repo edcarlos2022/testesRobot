@@ -18,8 +18,10 @@ Abrir o navegador
     ...    ELSE    Abrir navegador normalmente
 
 Abrir navegador no modo CI
-    ${options}=    Create List    --headless    --no-sandbox
-    Open Browser    ${URL}    ${BROWSER}    options=${options}
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()    sys
+    Call Method    ${options}    add_argument    --headless
+    Create Webdriver    Firefox    options=${options}
+    Go To    ${URL}
     Maximize Browser Window
 
 
