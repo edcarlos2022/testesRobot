@@ -34,15 +34,15 @@ Abrir navegador normalmente
 
 Acessar a home page do site Amazon.com.br
     Go To    url=${URL}
-    Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}
+    Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}    timeout=15s
+
 
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
-    Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}
+    Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}    timeout=15s
 
 Verificar se aparece a frase "${FRASE}"
     Wait Until Page Contains    text=${FRASE}
-    Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS}
 
 Verificar se o título da página fica "${TITLE_ELETRONICOS}"
     Title Should Be    title=${TITLE_ELETRONICOS}

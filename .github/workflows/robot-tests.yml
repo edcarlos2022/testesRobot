@@ -1,57 +1,71 @@
-name: Robot Tests
+# .github/workflows/robot-tests.yml - GitHub Actions pipeline para Robot Framework
 
-on: [push, pull_request]
+name: Robot Framework Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      CI: true
+      BROWSER: firefox
+      URL: https://www.amazon.com.br
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install robotframework
-        pip install robotframework-seleniumlibrary
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install robotframework robotframework-seleniumlibrary
 
-    - name: Remove snap Firefox and install via apt (PPA)
-      run: |
-        # Remover Firefox via Snap, se estiver instalado
-        sudo snap remove firefox || true
+      - name: Install Firefox via APT (PPA)
+        run: |
+          sudo snap remove firefox || true
+          sudo add-apt-repository ppa:mozillateam/ppa -y
+          sudo tee /etc/apt/preferences.d/mozilla-firefox << 'EOF'
+          Package: firefox
+          Pin: release o=LP-PPA-mozillateam
+          Pin-Priority: 501
+          EOF
+          sudo apt-get update
+          sudo apt-get install -y firefox libgtk-3-0 libdbus-glib-1-2 libxt6
 
-        # Adicionar o PPA da Mozilla
-        sudo add-apt-repository ppa:mozillateam/ppa -y
+      - name: Install GeckoDriver v0.36.0
+        run: |
+          GECKODRIVER_VERSION=v0.36.0
+          wget -qO- https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz | tar xz
+          chmod +x geckodriver
+          sudo mv geckodriver /usr/local/bin/
 
-        # Definir preferência do APT para usar o PPA
-        echo '
-        Package: firefox
-        Pin: release o=LP-PPA-mozillateam
-        Pin-Priority: 501
-        ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+      - name: Run Robot Framework tests
+        run: robot Tests/
 
-        # Atualizar pacotes e instalar Firefox
-        sudo apt-get update
-        sudo apt-get install -y firefox
+      - name: Upload Robot output.xml
+        uses: actions/upload-artifact@v3
+        with:
+          name: Robot Output XML
+          path: output.xml
 
-    - name: Install Firefox dependencies
-      run: |
-        sudo apt-get install -y libgtk-3-0 libdbus-glib-1-2 libxt6
+      - name: Upload Robot log.html
+        uses: actions/upload-artifact@v3
+        with:
+          name: Robot Log HTML
+          path: log.html
 
-    - name: Install GeckoDriver (stable version)
-      run: |
-        GECKODRIVER_VERSION=v0.34.0
-        wget https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
-        tar -xvzf geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
-        chmod +x geckodriver
-        sudo mv geckodriver /usr/local/bin/
-
-    - name: Run tests
-      run: |
-        robot Tests/
+      - name: Upload Robot report.html
+        uses: actions/upload-artifact@v3
+        with:
+          name: Robot Report HTML
+          path: report.html
